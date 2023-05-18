@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <BrowserRouter>
+        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
