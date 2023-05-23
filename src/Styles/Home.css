@@ -1,0 +1,27 @@
+.Home {
+    min-height: 100vh;
+    background-image: url("../Images/green-fir-tree-branches-table.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about, .carousel-root {
+    width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+    .Home {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .about, .carousel-root {
+        width: 90%;
+    }
+
+    .about {
+        margin-bottom: 50px;
+    }
+}
