@@ -1,0 +1,25 @@
+.Shop {
+    background-image: url("../Images/green-fir-tree-branches-table.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.Shop > h1 {
+    margin-top: 0;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 50px;
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.item > img {
+    height: 250px;
+}
