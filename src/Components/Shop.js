@@ -1,3 +1,4 @@
+import Item from './Item';
 import itemOneImage from '../Images/StoreImages/fur-hood-jacket.jpg';
 import itemTwoImage from '../Images/StoreImages/hooded-parka.jpg';
 import itemThreeImage from '../Images/StoreImages/konbeca-jacket.jpeg';
@@ -9,73 +10,27 @@ import itemEightImage from '../Images/StoreImages/wantdo-puffer-jacket.jpg';
 import itemNineImage from '../Images/StoreImages/windproof-fleece.jpg';
 import itemTenImage from '../Images/StoreImages/winter-rain-jacket.jpg';
 import '../Styles/Shop.css';
+import { Link } from 'react-router-dom';
 
-const Shop = () => {
+const Shop = (props) => {
     return (
         <div className="Shop">
-             <h1>Shop</h1>
-             <div className="item-grid">
-                <div className="item">
-                    <img src={itemOneImage} alt="Fur hood jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemTwoImage} alt="Hooded parka" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemThreeImage} alt="Konbeca jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemFourImage} alt="NameIt jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemFiveImage} alt="NorthFace winter jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemSixImage} alt="Quilted winter coat" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemSevenImage} alt="Thermal jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemEightImage} alt="WantDo puffer jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemNineImage} alt="Windproof fleece jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-                <div className="item">
-                    <img src={itemTenImage} alt="Winter rain jacket" />
-                    <h3>Item description</h3>
-                    <p>price</p>
-                    <button type="button">Add To Cart</button>
-                </div>
-             </div>
+            <h1>Shop</h1>
+            <div className="item-grid">
+                <Item src={itemOneImage} alt="Fur Hood Jacket" name="Fur Hood Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemTwoImage} alt="Hooded Parka" name="Hooded Parka" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemThreeImage} alt="Gray Hooded Jacket" name="Gray Hooded Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemFourImage} alt="Fur Winter Jacket" name="Fur Winter Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemFiveImage} alt="Red Puffer Jacket" name="Red Puffer Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemSixImage} alt="Quilted Winter Coat" name="Quilted Winter Coat" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemSevenImage} alt="Thermal Jacket" name="Thermal Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemEightImage} alt=" Hooded Puffer Jacket" name="Hooded Puffer Jacket" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemNineImage} alt="Windproof Fleece" name="Windproof Fleece" price={47.99} addToCart={props.addToCart}></Item>
+                <Item src={itemTenImage} alt="Winter Rain Jacket" name="Winter Rain Jacket" price={47.99} addToCart={props.addToCart}></Item>
+            </div>
+            <Link to="/cart">
+                <button type="button" className="cart-button">Cart ({props.itemCount})</button>
+            </Link>
         </div>
     );
 }
