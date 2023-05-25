@@ -11,6 +11,10 @@
     width: 45%;
 }
 
+.image-credit {
+    font-size: 8px;
+}
+
 @media screen and (max-width: 1000px) {
     .Home {
         flex-direction: column;
