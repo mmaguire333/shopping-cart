@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Shop from './Components/Shop';
 import Cart from './Components/Cart';
 import Navbar from './Components/Navbar';
+import Checkout from './Components/Checkout';
 import './App.css';
 
 function App() {
@@ -28,6 +29,14 @@ function App() {
     }
   }
 
+  const removeFromCart = (name) => {
+    setCartItems(cartItems.filter(item => item.name !== name));
+  }
+
+  const emptyCart = () => {
+    setCartItems([]);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -35,7 +44,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop addToCart={addToCart} itemCount={cartItems.map((item => item.quantity)).reduce((accumulator, currentValue) => accumulator + currentValue, 0)} />} />
-          <Route path="/cart" element={<Cart cartItems={cartItems}/>} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} emptyCart={emptyCart} />} />
+          <Route path="/checkout" element={<Checkout></Checkout>} />
         </Routes>
       </BrowserRouter>
     </div>
