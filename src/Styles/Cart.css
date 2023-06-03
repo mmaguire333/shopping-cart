@@ -1,0 +1,101 @@
+.cart-list {
+    list-style-type: none;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+}
+
+.cart-image-container {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-item-image {
+    height: 100px;
+}
+
+.delete-icon {
+    width: 30px;
+}
+
+.delete-icon:hover {
+    transform: scale(1.05);
+}
+
+.total {
+    font-size: 35px;
+    text-decoration: underline;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    width: 40%;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid black;
+}
+
+.title {
+    font-size: 35px;
+    text-decoration: underline;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cart-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.cart-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightslategray;
+}
+
+.cart-button:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 1300px) {
+    .cart-list, .total, .title {
+        width: 60%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cart-list, .total, .title {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cart-list, .total, .title {
+        width: 95%;
+    }
+}
