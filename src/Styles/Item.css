@@ -1,7 +1,31 @@
 .Item {
     background-color: white;
+    border-radius: 3px;
+    border: 1px solid black;
 }
 
 .item-image {
     height: 250px;
+    margin-top: 20px;
+}
+
+.quantity-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.quantity-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.quantity-buttons > input {
+    width: 1.5rem;
+}
+
+.Item > button {
+    margin-bottom: 20px;
 }
