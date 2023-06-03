@@ -1,7 +1,5 @@
 .Home {
     min-height: 100vh;
-    background-image: url("../Images/green-fir-tree-branches-table.jpg");
-    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,8 +9,37 @@
     width: 45%;
 }
 
+.about {
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.about > p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carousel-image {
+    border-radius: 5px;
+}
+
 .image-credit {
     font-size: 8px;
+}
+
+.shop-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    background-color: snow;
+    margin-bottom: 20px;
+}
+
+.shop-button:hover {
+    transform: scale(1.03);
 }
 
 @media screen and (max-width: 1000px) {
@@ -26,6 +53,7 @@
     }
 
     .about {
+        margin-top: 50px;
         margin-bottom: 50px;
     }
 }
