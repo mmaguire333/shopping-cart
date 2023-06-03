@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className="Navbar">
-            <h1>Company Name</h1>
+            <h1>Online Store</h1>
             <nav>
                 <ul>
                     <Link to="/">
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <li>Shop</li>
                     </Link>
                     <Link to="/cart">
-                        <li>Cart</li>
+                        <li>Cart ({props.itemCount})</li>
                     </Link>
                 </ul>
             </nav>
