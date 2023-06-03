@@ -30,11 +30,13 @@ const Item = (props) => {
             <p>${props.price}</p>
             <div className="quantity-input">
                 <p>Quantity: </p>
-                <button type="button" onClick={decrementQuantity}>-</button>
-                <input type="number" value={quantity} onChange={handleChange}></input>
-                <button type="button" onClick={incrementQuantity}>+</button>
+                <div className="quantity-buttons">
+                    <button type="button" onClick={decrementQuantity}>-</button>
+                    <input type="number" value={quantity} onChange={handleChange}></input>
+                    <button type="button" onClick={incrementQuantity}>+</button>
+                </div>
             </div>
-            <button type="button" onClick={addToCartOnClick}>Add To Cart</button>
+            <button className="cart-button" type="button" onClick={addToCartOnClick}>Add To Cart</button>
         </div>
     )
 }
