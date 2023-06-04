@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Shop from './Components/Shop';
 import Cart from './Components/Cart';
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar itemCount={cartItems.map((item => item.quantity)).reduce((accumulator, currentValue) => accumulator + currentValue, 0)}></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -47,7 +47,7 @@ function App() {
           <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} emptyCart={emptyCart} />} />
           <Route path="/checkout" element={<Checkout></Checkout>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
