@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.aef9040d.css",
+    "main.js": "/shopping-cart/static/js/main.09453d14.js",
+    "static/media/carousel-image-2.jpg": "/shopping-cart/static/media/carousel-image-2.776e87704b1eddf2e214.jpg",
+    "static/media/carousel-image-3.jpg": "/shopping-cart/static/media/carousel-image-3.285ad1ba36f25218eec4.jpg",
+    "static/media/carousel-image-4.jpg": "/shopping-cart/static/media/carousel-image-4.f5176f221d608b259cf1.jpg",
+    "static/media/carousel-image-1.jpg": "/shopping-cart/static/media/carousel-image-1.b3851754211e0c08db89.jpg",
+    "static/media/green-fir-tree-branches-table.jpg": "/shopping-cart/static/media/green-fir-tree-branches-table.9a2ca92cdb32cb9b547a.jpg",
+    "static/media/green-fir-tree-branches-table-large.jpg": "/shopping-cart/static/media/green-fir-tree-branches-table-large.11fb6648e2126826551a.jpg",
+    "static/media/green-fir-tree-branches-table-medium.jpg": "/shopping-cart/static/media/green-fir-tree-branches-table-medium.5d6086a15303801f4583.jpg",
+    "static/media/green-fir-tree-branches-table-small.jpg": "/shopping-cart/static/media/green-fir-tree-branches-table-small.3d5c54d5bb218e736e9d.jpg",
+    "static/media/konbeca-jacket.jpeg": "/shopping-cart/static/media/konbeca-jacket.0b79be016530e2f75c7e.jpeg",
+    "static/media/hooded-parka.jpg": "/shopping-cart/static/media/hooded-parka.3c390a3de2dab1fe6c60.jpg",
+    "static/media/north-face-winter-jacket.jpg": "/shopping-cart/static/media/north-face-winter-jacket.ee4487322ab6840496f0.jpg",
+    "static/media/quilted-winter-coat.jpg": "/shopping-cart/static/media/quilted-winter-coat.4463970c6d02b661e1fd.jpg",
+    "static/media/winter-rain-jacket.jpg": "/shopping-cart/static/media/winter-rain-jacket.883c525bf358da7e337b.jpg",
+    "static/media/windproof-fleece.jpg": "/shopping-cart/static/media/windproof-fleece.97d0b6fe5f3009a7600b.jpg",
+    "static/media/wantdo-puffer-jacket.jpg": "/shopping-cart/static/media/wantdo-puffer-jacket.7e12766baeb5fce0aac0.jpg",
+    "static/media/thermal-jacket.jpg": "/shopping-cart/static/media/thermal-jacket.b2809b6fd322b120b0d6.jpg",
+    "static/media/name-it-winter-jacket.jpg": "/shopping-cart/static/media/name-it-winter-jacket.b7aff809405b4a002e26.jpg",
+    "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b843b94f1b21e3c2660b.png",
+    "static/media/fur-hood-jacket.jpg": "/shopping-cart/static/media/fur-hood-jacket.4984d5d2e0d7dcfb034b.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.aef9040d.css.map": "/shopping-cart/static/css/main.aef9040d.css.map",
+    "main.09453d14.js.map": "/shopping-cart/static/js/main.09453d14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aef9040d.css",
+    "static/js/main.09453d14.js"
+  ]
+}
